@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Archives</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">DA</span>
+      <div>
+      
+        <p class="brand-tagline">Digital Archives</p>
+      </div>
+    </div>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="is-active" href="index.html">Home</a>
+      <a href="historical-records.html">Historical Records</a>
+      <a href="photographs.html">Photographs</a>
+      <a href="files.html">Files</a>
+      <a href="#feedback">Feedback</a>
+      <a class="nav-cta" href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Simple access to preserved local history</p>
+        <h1>Search records, photographs, and archive files in one digital reading room.</h1>
+
+        <section class="search-panel" data-search-region>
+          <form
+            class="search-form"
+            data-search-form
+            data-scroll-target="#featured-collections"
+            data-search-scope="#featured-collections"
+          >
+          
+            <div class="search-row">
+              <input
+                id="home-search"
+                name="search"
+                type="search"
+                placeholder="Search by title, year, or keyword"
+                data-search-input
+              >
+              <button type="submit">Search</button>
+            </div>
+            <p class="search-hint">Try words like: records, school, internet.</p>
+          </form>
+        </section>
+      </div>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Navigation</p>
+        <h2>Browse the archive by page</h2>
+      </div>
+      <div class="category-grid">
+        <article class="category-card">
+          <h3>Historical Records</h3>
+          <p>Minutes, registers, charters, and community reports.</p>
+          <a href="historical-records.html">Open records page</a>
+        </article>
+        <article class="category-card">
+          <h3>Photographs</h3>
+          <p>Documented images from events, places, and family collections.</p>
+          <a href="photographs.html">Open photographs page</a>
+        </article>
+        <article class="category-card">
+          <h3>Files</h3>
+          <p>Preservation files, inventories, and downloadable research aids.</p>
+          <a href="files.html">Open files page</a>
+        </article>
+      </div>
+    </section>
+      <p class="empty-state" data-empty-state hidden>No matching archive items were found. Try another keyword.</p>
+    </section>
+      </div>
+    </section>
+
+    <section class="section feedback-section" id="feedback">
+      <div class="section-heading">
+        <p class="eyebrow">Feedback</p>
+        <h2>Share your review of the archive service</h2>
+      </div>
+
+      <div class="feedback-layout">
+        <form class="feedback-form" data-feedback-form>
+          <label for="reviewer-name">Your name</label>
+          <input id="reviewer-name" name="reviewerName" type="text" placeholder="Enter your name" required>
+
+          <label for="service-area">Service used</label>
+          <select id="service-area" name="serviceArea" required>
+            <option value="Reading room support">Reading room support</option>
+            <option value="Digital search">Digital search</option>
+            <option value="Download service">Download service</option>
+            <option value="Reference help">Reference help</option>
+          </select>
+
+          <label for="review-text">Your review</label>
+          <textarea
+            id="review-text"
+            name="reviewText"
+            rows="5"
+            placeholder="Write your feedback about the services provided"
+            required
+          ></textarea>
+
+          <button type="submit">Submit review</button>
+          <p class="form-status" data-feedback-status aria-live="polite"></p>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Digital Archives</p>
+    <p>Preserving records, photographs, and files for public access.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

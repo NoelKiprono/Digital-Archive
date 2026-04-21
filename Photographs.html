@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photographs | HeritageVault</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">DA</span>
+      <div>
+        <a class="brand-title" href="index.html"></a>
+        <p class="brand-tagline">Digital Archives</p>
+      </div>
+    </div>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="historical-records.html">Historical Records</a>
+      <a class="is-active" href="photographs.html">Photographs</a>
+      <a href="files.html">Files</a>
+
+      <a href="index.html#feedback">Feedback</a>
+      <a class="nav-cta" href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner" data-search-region>
+      <div>
+        <p class="eyebrow">Photographs</p>
+        <h1>Explore indexed image collections and descriptive photo entries.</h1>
+        <p>
+          Review notable scenes, community events, and public spaces captured in the archive's
+          photograph collection.
+        </p>
+      </div>
+      <form class="search-form compact-search" data-search-form>
+       
+        <div class="search-row">
+          <input
+            id="photo-search"
+            name="photoSearch"
+            type="search"
+            placeholder="Search photographs"
+            data-search-input
+          >
+          <button type="submit">Search</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="section">
+      <div class="resource-grid">
+        <article
+          class="archive-card photo-card"
+          data-search-item="Market Square Festival 1978 photograph market crowd celebration"
+        >
+          <div class="image-swatch image-one" aria-hidden="true"></div>
+          <p class="card-tag">Festival</p>
+          <h3>Market Square Festival, 2000</h3>
+          <p>An indexed street photograph showing stalls, dancers, and market signage.</p>
+         
+    
+          <div class="card-actions">
+            <a class="button button-ghost" href="downloads/market-square-photo.png" download>Download photograph</a>
+          </div>
+        </article>
+
+        <article
+          class="archive-card photo-card"
+          data-search-item="River Bridge Opening 1981 infrastructure ceremony photograph bridge"
+        >
+          <div class="image-swatch image-two" aria-hidden="true"></div>
+          <p class="card-tag">Ceremony</p>
+          <h3>River Bridge Opening, 1981</h3>
+          <p>A ceremonial image documenting the first public crossing and local leaders present.</p>
+          
+          <div class="card-actions">
+          
+            <a class="button button-ghost" href="downloads/river-bridge-opening.png" download>Download photograph</a>
+          </div>
+        </article>
+
+        <article
+          class="archive-card photo-card"
+          data-search-item="Community Library Reading Day 1992 books youth photograph library"
+        >
+          <div class="image-swatch image-three" aria-hidden="true"></div>
+          <p class="card-tag">Library</p>
+          <h3>Community Reading Day, 1992</h3>
+          <p>A children’s reading event preserved as part of the literacy outreach collection.</p>
+          
+          <div class="card-actions">
+        
+            <a class="button button-ghost" href="downloads/community-reading-day.png" download>Download photograph</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="empty-state" data-empty-state hidden>No photographs match your search.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Digital Archives</p>
+    <p>Photograph descriptions and collection notes for visual history research.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

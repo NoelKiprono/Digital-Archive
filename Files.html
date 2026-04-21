@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Files | </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">DA</span>
+      <div>
+        <a class="brand-title" href="index.html"></a>
+        <p class="brand-tagline">Digital Archives</p>
+      </div>
+    </div>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="historical-records.html">Historical Records</a>
+      <a href="photographs.html">Photographs</a>
+      <a class="is-active" href="files.html">Files</a>
+      <a href="index.html#feedback">Feedback</a>
+      <a class="nav-cta" href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner" data-search-region>
+      <div>
+        <p class="eyebrow">Files</p>
+        <h1>Download archive files and supporting research materials.</h1>
+        
+   
+      </div>
+      <form class="search-form compact-search" data-search-form>
+        
+        <div class="search-row">
+          <input
+            id="file-search"
+            name="fileSearch"
+            type="search"
+            placeholder="Search files"
+            data-search-input
+          >
+          <button type="submit">Search</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="section">
+      <div class="resource-grid">
+        <article
+          class="archive-card"
+          data-search-item="Preservation Checklist storage humidity labels handling file"
+        >
+          <p class="card-tag">Guide File</p>
+          <h3>Preservation Checklist</h3>
+          <p>A quick file for checking box labels, shelving, humidity, and handling practices.</p>
+         
+          <div class="card-actions">
+            <a class="button button-ghost" href="downloads/preservation-checklist.docx" download>Download</a>
+          </div>
+        </article>
+
+        <article
+          class="archive-card"
+          data-search-item="Council Index CSV minutes catalogue metadata file"
+        >
+          <p class="card-tag">Index File</p>
+          <h3>Town Council Index</h3>
+          <p>A simple metadata file listing key council meetings and their archival references.</p>
+         
+          <div class="card-actions">
+            <a class="button button-ghost" href="downloads/town-council-index.docx" download>Download</a>
+          </div>
+        </article>
+
+        <article
+          class="archive-card"
+          data-search-item="Photo Notes descriptive file image caption reference file"
+        >
+          <p class="card-tag">Reference File</p>
+          <h3>Photograph Notes Pack</h3>
+          <p>A bundled note file with captions, identifiers, and usage notes for selected images.</p>
+          
+          <div class="card-actions">
+          
+            <a class="button button-ghost" href="downloads/market-square-photo-notes.docx" download>Download</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="empty-state" data-empty-state hidden>No files match your search.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p> Digital Archives</p>
+    <p>Downloadable files prepared for access, preservation, and research use.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

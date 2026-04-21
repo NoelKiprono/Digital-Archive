@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historical Records | </title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">DA</span>
+      <div>
+        <a class="brand-title" href="index.html"></a>
+        <p class="brand-tagline">Digital Archives</p>
+      </div>
+    </div>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a class="is-active" href="historical-records.html">Historical Records</a>
+      <a href="photographs.html">Photographs</a>
+      <a href="files.html">Files</a>
+      <a href="index.html#feedback">Feedback</a>
+      <a class="nav-cta" href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner" data-search-region>
+      <div>
+        <p class="eyebrow">Historical Records</p>
+        <h1>Browse official documents and preserved written records.</h1>
+        <p>
+          Search historical records by title, year, or subject.
+        </p>
+      </div>
+      <form class="search-form compact-search" data-search-form>
+        
+        <div class="search-row">
+          <input
+            id="records-search"
+            name="recordsSearch"
+            type="search"
+            placeholder="Search records"
+            data-search-input
+          >
+          <button type="submit">Search</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="section">
+      <div class="resource-grid">
+        <article
+          class="archive-card"
+          data-search-item="Town Council Minutes July 1974 public works governance policy"
+        >
+          <p class="card-tag">Minutes</p>
+          <h3>Town Council Minutes, July 1999</h3>
+          <p>Meeting notes covering road maintenance, market permits, and staffing matters.</p>
+                 <div class="card-actions">
+          
+            <a class="button button-ghost" href="downloads/town-council-minutes-1999.docx" download>Download</a>
+          </div>
+        </article>
+
+        <article
+          class="archive-card"
+          data-search-item="School Register 1958 education attendance register student record"
+        >
+          <p class="card-tag">Register</p>
+          <h3>School Register, 1990</h3>
+          <p>A preserved attendance register from the first district primary school intake.</p>
+         
+          <div class="card-actions">
+            <a class="button button-ghost" href="downloads/school-register-1990.docx" download>Download</a>
+          </div>
+        </article>
+
+        <article
+          class="archive-card"
+          data-search-item="Land Survey Notes 1967 planning map boundary file"
+        >
+          <p class="card-tag">Survey Notes</p>
+          <h3>Land Survey Notes, 1967</h3>
+          <p>Typed notes summarizing boundary markers and public land usage before expansion.</p>
+          
+           
+          <div class="card-actions">
+            <a class="button button-ghost" href="downloads/land-survey-notes-1967.docx" download>Download</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="empty-state" data-empty-state hidden>No records match your search.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Digital Archives</p>
+    <p>Historical documents curated for research and public memory.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
